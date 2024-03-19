@@ -7,7 +7,8 @@ public class App {
                 new AnnotationConfigApplicationContext(AppConfig.class);
         HelloWorld bean =
                 (HelloWorld) applicationContext.getBean("helloworld");
-        HelloWorld bean1 = (HelloWorld) applicationContext.getBean("helloworld");
+        HelloWorld bean1 =
+                (HelloWorld) applicationContext.getBean("helloworld");
 
         Cat beanCat = (Cat) applicationContext.getBean("cat");
         Cat beanCat1 = (Cat) applicationContext.getBean("cat");
